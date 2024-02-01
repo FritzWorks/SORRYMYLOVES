@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartfelt Apology</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eaeaea;
+        }
+        .apology-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .sorry-message {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .error-face {
+            font-size: 60px;
+            color: #ff4500;
+        }
+        .tear {
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            background-color: #add8e6;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+            animation: tearFall 2s infinite alternate;
+        }
+        @keyframes tearFall {
+            0% {
+                top: -20px;
+                opacity: 0;
+            }
+            100% {
+                top: 100%;
+                opacity: 1;
+            }
+        }
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .action-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .accept-button {
+            background-color: #ff69b4;
+            color: #fff;
+        }
+        .accept-button:hover {
+            background-color: #d13a7a;
+        }
+        .reject-button {
+            background-color: #333;
+            color: #fff;
+        }
+        .reject-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="apology-container">
+        <p class="sorry-message">
+            I'm deeply sorry for any pain I've caused. Sorry talaga asawa ko please forgive me huhuhuhuhuhu di ko na kaya usap na tayo.
+        <p class="error-face">
+            &#128542; <!-- Unicode character for a sad face -->
+            <span class="tear"></span>
+        </p>
+        <div class="button-container">
+            <button class="action-button accept-button" onclick="acceptApology()">Accept Apology</button>
+            <button class="action-button reject-button" onclick="rejectApology()">I don't accept your apology</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptApology() {
+            alert("Thank you, I love youuuu asawa .");
+        }
+
+        function rejectApology() {
+            alert("I understand. If you ever reconsider, I'll be here with an open heart.");
+        }
+    </script>
+</body>
+</html>
